@@ -34,13 +34,34 @@ body h1 {
 
 .description-section h1 { 
   text-align: center;
-  padding-bottom: 30px;
 }
 
-/* .description-section .top-text , .sub-text {
-  text-align: center;
-  padding-bottom: 100px;
-} */
+/* Subtext style */
+
+#subtext h4 {
+  font-family: 'Lato' sans-serif;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+#subtext p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.description-section .top-text {
+  margin-bottom: 7vh;
+}
+
+.description-section #seo .top-text {
+  margin-top: 5vh;
+}
+
+#seo #subtext {
+  align-items: center;
+}
+
 
 /* Footer section */
 
