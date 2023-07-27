@@ -1,0 +1,57 @@
+/* Reset CSS */
+
+/* Обнуляем отступы и отступы внутри элементов */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* Определяем базовый шрифт и цвет текста */
+body {
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+/* Убираем стили ссылок по умолчанию */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем маркеры у неупорядоченных списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Убираем стили элементов форм */
+button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* Устанавливаем полноэкранный вид для картинок */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Дополнительные сбросы могут быть добавлены по вашему усмотрению */

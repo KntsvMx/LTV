@@ -1,19 +1,74 @@
+/* Global syle */
 
-
-/* Header */
-
-/* Main section */
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+}
+
+body h1 {
+  font-family: 'Lato' sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Header section*/
+
+/* Main section */
+.description-section {
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-section h1 { 
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* .description-section .top-text , .sub-text {
+  text-align: center;
+  padding-bottom: 100px;
+} */
+
+/* Footer section */
+
+.footer {
+  min-height: 10vh;
+}
+
+/* Убираем отступы и маркеры у списка */
+ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Выравниваем элементы по вертикали */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Выравниваем элементы списка по горизонтали */
+footer ul.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Отступы между элементами списка */
+footer ul.nav li {
+  margin-right: 10px;
 }
