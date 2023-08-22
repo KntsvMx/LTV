@@ -3,6 +3,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  padding-top: 135px;
 }
 
 body {
@@ -23,9 +24,20 @@ body h1 {
 
 /* Header section*/
 
+.navbar::before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	transform: translateY(-100%);
+	transition: all .3s;
+	z-index: -1;
+}
+
 /* Main section */
 .description-section {
   min-height: 50vh;
+  max-width: 900px;
+  margin: auto auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,19 +48,46 @@ body h1 {
   text-align: center;
 }
 
-/* Subtext style */
+.description-section p {
+  padding-top: 20px;
+}
 
-#subtext h4 {
+.aboutUsText {
+  margin-top: 59.5px;
+}
+
+
+.siteWork { 
+  margin-top: 20px; 
+  margin-left: 20px;
   font-family: 'Lato' sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #000;
-  margin-bottom: 15px;
 }
 
-#subtext p {
-  font-size: 14px;
-  letter-spacing: 1px;
+.adress {
+  margin-top: 20px; 
+  margin-left: 20px;
+  font-family: 'Lato' sans-serif;
+  font-weight: 400;
+  color: #000;
 }
+
+.beneficiary {
+  margin-top: 20px; 
+  margin-left: 20px;
+  font-family: 'Lato' sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000;
+}
+
+.contact {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+/* Subtext style */
 
 .description-section .top-text {
   margin-bottom: 7vh;
@@ -58,10 +97,39 @@ body h1 {
   margin-top: 5vh;
 }
 
-#seo #subtext {
-  align-items: center;
+/* Form style */
+label {
+  font-weight: bold;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+form>button  {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form> button:hover {
+  background-color: #0056b3;
+}
 
 /* Footer section */
 
@@ -92,4 +160,13 @@ footer ul.nav {
 /* Отступы между элементами списка */
 footer ul.nav li {
   margin-right: 10px;
+}
+
+/* Стили для подсветки иконок при наведении */
+.footer .nav li a:hover {
+  color: #333;
+}
+
+.footer .nav li a:hover svg path {
+  fill: #333; 
 }
