@@ -1,0 +1,387 @@
+/* Общие стили для всех размеров экрана */
+
+/* Медиа-запрос для экранов шириной более 1680px */
+/* @media (min-width: 1681px) {} */
+
+/* Медиа-запрос для экранов шириной от 1281px до 1680px */
+/* @media (min-width: 1281px) and (max-width: 1680px) {} */
+
+/* Медиа-запрос для экранов шириной от 1025px до 1280px */
+/* @media (min-width: 1025px) and (max-width: 1280px) {} */
+
+/* Медиа-запрос для экранов шириной до 1024px */
+/* @media (max-width: 930px) {} */
+
+/* Медиа-запрос для экранов шириной до 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .navbar-brand {
+    max-width: 25%;
+  }
+
+  .navbar-toggler {
+    margin-right: 25px;
+  }
+
+  .navbar-nav {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .row,
+  .col-12 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* index.html */
+  #hello-text {
+    margin-top: 15%;
+    padding-top: 19%;
+    width: 100%;
+  }
+
+  .aboutUsText {
+    text-align: right;
+    max-width: auto;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-top: 35%;
+    font-size: 15px;
+  }
+
+  .text-muted {
+    padding-left: 10px;
+  }
+
+  .text-muted > svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* ----- */
+
+  /* aboutUs.html */
+
+  .siteWork, .text-white {
+    margin-top: 15%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  #description, #about, #values, #contact, #map > p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+/* career.html */
+
+#resume-form {
+  padding-top: 80px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+}
+
+form > input[type="file"] {
+  align-items: center;
+  font-size: 12px;
+}
+
+form > button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+form > button:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar-brand {
+    max-width: 50%;
+  }
+
+  .navbar-toggler {
+    margin-right: 25px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .row,
+  .col-12 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* index.html */
+  #hello-text {
+    margin-top: 25%;
+    width: 100%;
+  }
+
+  .aboutUsText {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 25%;
+    font-size: 14px;
+  }
+
+  .text-muted {
+    padding-left: 10px;
+  }
+
+  .text-muted > svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* ----- */
+
+  /* aboutUs.html */
+
+  .siteWork,
+  .text-white {
+    margin-top: 15%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  #description,
+  #about,
+  #values,
+  #contact,
+  #map > p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* career.html */
+
+  #resume-form {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  form > input[type="file"] {
+    align-items: center;
+    font-size: 12px;
+  }
+
+  form > button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  form > button:hover {
+    background-color: #0056b3;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Медиа-запрос для экранов шириной до 480 пикселей */
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar-brand {
+    max-width: 50%;
+  }
+
+  .navbar-toggler {
+    margin-right: 25px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .row,
+  .col-12 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* index.html */
+
+  #hello-text {
+    margin-top: 25%;
+    width: 100%;
+  }
+
+  .aboutUsText {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 25%;
+    font-size: 12px;
+  }
+
+  .text-muted {
+    padding-left: 5px;
+    font-size: 11px;
+  }
+
+  .text-muted > svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* ----- */
+
+  /* aboutUs.html */
+
+  .siteWork,
+  .text-white {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .lead {
+    font-size: 14px;
+  }
+
+  #description,
+  #about,
+  #values,
+  #contact,
+  #map > p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* career.html */
+
+  #resume-form {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  form > input[type="file"] {
+    align-items: center;
+    font-size: 12px;
+  }
+
+  form > button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  form > button:hover {
+    background-color: #0056b3;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}

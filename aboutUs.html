@@ -6,14 +6,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <!-- Reset CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- StyleSheet CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,13 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700&family=Montserrat:ital,wght@0,400;1,700&display=swap"
     rel="stylesheet">
 
-  <title>Document</title>
+  <title>LTV About</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/logo/Ltv.png" width="250px"></a>
+      <a class="navbar-brand" href="#"><img src="images/logo/Ltv.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,33 +50,62 @@
       </div>
     </div>
   </nav>
-
-  <section class="description-section justify-content-center my-5">
-    <div class="conatiner">
-      <div class="row">
-        <div class="col-6">
-          <img src="images/cameraImage2.jpg">
-        </div>
-        <div class="col-6">
-          <p class="aboutUsText"> 
-            "LTV" — это не просто канал, это стиль жизни. Мы создаем контент, который объединяет, вдохновляет и расширяет горизонты. Станьте частью нашего телевизионного сообщества, где каждый найдет что-то особенное для себя. Добро пожаловать в будущее телевидения с "LTV"!
-          </p>
-        </div>
+  <div class="wrapper">
+    <section class="description-section py-5" id="description">
+      <div class="container">
         <div class="row">
-          <div class="col">
-            <h4 class="siteWork"> Релізи, запити та пропозиції щодо роботи сайту: </h4>
-            <h6 class="contact"> Телефон для контактів: +380000000</h6>
-            <h6 class="contact"> e-mail: emailAdr@gmail.com</h6>
-          </div>
-          <div class="row">
-            <h4 class="adress">Адреса: </h4>
-            <h6 class="contact">Телефон для контактів: </h6>
-            <h6 class="contact">Пошта для контактів: </h6>
+          <div class="col text-center">
+            <h1 class="siteWork">Ласкаво просимо до LTV</h1>
+            <p class="lead">Раді вас вітати на сторінці нашого телеканалу LTV! Тут ми присвячуємо себе завданню надавати якісний контент та вдосконалювати нашу платформу для вашого комфорту. <br><br> Тут ви знайдете останні новини та програми, а також маєте можливість поділитися своїми побажаннями та ідеями для покращення нашого сервісу.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="about-section py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-white">Наша Команда</h2>
+            <p>Ми - інноваційний телеканал, що служить на благо наших глядачів. Наша мета - надавати найкращий телевізійний контент для вашої розваги та навчання, підвищуючи якість вашого дозвілля.</p>
+            <p>Ми пишаємося нашою командою фахівців, готових завжди відповісти на ваші запитання та допомогти вирішити будь-які питання, пов'язані з нашим вмістом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="values-section py-5" id="values">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-white">Наші цінності</h2>
+            <p>Телеканал LTV базується на принципах надійності, креативності та глибокого занурення в потреби глядачів. Ми завжди ставимо ваші інтереси на перше місце та постійно вдосконалюємо наш контент для забезпечення незабутнього перегляду.</p>
+            <p>Ми віримо, що телевізія - це засіб об'єднання та розуміння, і ми прагнемо забезпечити вас програмами, які сприяють зв'язку та обміну ідеями, незалежно від місця перебування.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-white">Контактна інформація</h2>
+            <p>Телефон для контактів: +380000000</p>
+            <p>E-mail: emailAdr@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="map-section" id="map">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h2>Наше розташування</h2>
+                  Вставте код вбудованої карти тут (наприклад, Google Maps)
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d12.345678!3d-12.345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDIwJzEwLjAiTiAxMsKwMDUnMjguMiJF!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+      </div>
+  </section> -->
+  </div>
 
   <footer class="footer d-flex flex-wrap justify-content-between align-items-center py-4 border-top bg-light">
     <div class="container">
